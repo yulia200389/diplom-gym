@@ -226,12 +226,17 @@ body {
     display: block;
 }
 .maraphon:hover .promo-grid-type{
-    display: block;
+    display: none;
 }
 .maraphon-grad:hover {
     background: linear-gradient(180deg, rgba(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%);  
 }
-
+.trainer:hover .promo-grid-type{
+    display: none;
+}
+.yoga:hover .promo-grid-type{
+    display: none;
+}
 .date {
     margin: 0;
     margin-top: 33px;
