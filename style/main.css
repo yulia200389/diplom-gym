@@ -78,12 +78,10 @@ body {
     transition: .3s;
 }
 .header-link-first:hover {
-    height: 48px;
-    width: 48px;
-}
+    
+}transform: scale(1.6);
 .header-link-second:hover {
-    height: 48px;
-    width: 48px;
+    transform: scale(1.6);
 }
 
 .banner {
@@ -158,7 +156,11 @@ body {
     color: #2B3541;
     margin-bottom: 59px;
 }
-
+.banner-text-list :hover {
+    background-color: #2B3541;
+    color: #FBF138;
+    transition: 0.3s;
+}
 .banner-text-link {
     margin-left: 2px;
     padding: 24px 29px;    
@@ -374,7 +376,7 @@ body {
 .grid-item {
     border: 1px solid #2B3541;
     gap: 20px 20px;  
-    padding: 23px 29px 0;
+    padding: 23px 29px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;  
@@ -386,9 +388,9 @@ body {
 }
 .grid-item:hover .grid-item-body {
     margin-top: 0px;
-    margin-bottom: 0px;
-
+    margin-bottom: 0px;    
 }
+
 .grid-item:hover .description {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -429,6 +431,11 @@ body {
     height: 107px;
    margin-top: 179px;
 }
+.grid-item:nth-child(4) {
+    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
+    opacity: 0.7;
+    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
+}
 .grid-item:hover .grid-item-jump {
     margin-top: 80px;
     margin-bottom: 2px;
@@ -462,8 +469,12 @@ body {
 }
 
 .grid-item:hover {
-background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.45) 100%);
-cursor: pointer;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 30px rgba(43, 53, 65, 0.2);
+    cursor: pointer;
+    border: none;
+}
+
 }
 .grid-item:hover .description-item {
     display: block;
@@ -494,44 +505,23 @@ cursor: pointer;
 .checkbox:checked + label::before{
    content:'';
    position: absolute;
-   width: 22px;
-   height: 22px;
+   width: 18px;
+   height: 18px;
    left:0;
    top:calc(50% - 10px);
    background-image: url(../image/checkbox.svg);
    background-repeat: no-repeat;
 }
-.checkbox:checked + label::after{
-   content:'';
-   position: absolute;
-   width: 18px;
-   height: 18px;
-   transition: all .2s ease;
-   opacity: 1;
-   left: 4px;
-   top: calc(50% - 6px);
-}
 .checkbox:not(:checked) + label::before{
    content:'';
    position: absolute;
-   width: 18px;
-   height: 18px;
+   width: 16px;
+   height: 16px;
    left:0;
    top:calc(50% - 10px);
    background-color: transparent;
    border-radius: 2px;
    border: 2px solid #5d575f;
-}
-.checkbox:not(:checked) + label::after{
-   content:'';
-   position: absolute;
-   width: 18px;
-   height: 18px;
-   transition: all .2s ease;
-   opacity: 0;
-   left: 4px;
-   top: calc(50% - 6px);
-   background-color: #7d25a9;
 }
 .radio:checked + label::before{
    border-radius: 100%;
@@ -574,19 +564,24 @@ cursor: pointer;
     font-weight: normal;
     font-size: 18px;
     color: #2B3541;
-    opacity: 0.3;
+    
 }
 .subscription-form a {
-background: #FBF138;
-box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.2);
-color: #2B3541;
-font-weight: bold;
-font-size: 16px;
-text-transform: uppercase;
-border: none;
-text-align: center;
-padding: 23px 45px ;
-cursor: pointer;
+    background: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.2);
+    color: #2B3541;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    text-align: center;
+    padding: 23px 45px ;
+    cursor: pointer;
+}
+.subscription-form a:hover {
+    background-color: #2B3541;
+    color: #FBF138;
+    transition: 0.3s;
 }
 .agreement {
     position: absolute;
@@ -595,11 +590,15 @@ cursor: pointer;
     font-size: 11px;
     color: #2B3541;
     margin-top: 21px;
-    left: -5px;
+    left: -5px; 
+    color: #8F949A;   
 }
 .agreement a {
     font-weight: normal;
     font-size: 11px;
+    color: #8F949A; 
+}
+.label-agree a:hover {    
     color: #2B3541;
 }
 
@@ -655,6 +654,11 @@ margin: 0;
     text-align: center;
     text-transform: uppercase;
 } 
+.about-box-up a:hover {
+    background-color: #2B3541;
+    color: #FBF138;
+    transition: 0.3s;
+}
 .about-box-up button:hover {
     background: #2B3541;
     box-shadow: 0px 13px 24px rgba(43, 53, 65, 0.2);
@@ -733,6 +737,9 @@ width: 204px;
     text-decoration: none;
     cursor: pointer;
 }
+.footer-nav a:hover {
+    border-bottom: 1px solid #2B3541;
+}
 .footer-link-web {
     display: flex;
     gap: 62px;
@@ -773,6 +780,9 @@ width: 204px;
     padding: 0;
     cursor: pointer;
 }
+.footer-link-first:hover {
+    transform: scale(1.2);
+}
 .footer-link-second {
     background-image: url(../image/fb.svg);
     background-repeat: no-repeat;
@@ -781,6 +791,9 @@ width: 204px;
     height: 27px;
     padding: 0;
     cursor: pointer;
+}
+.footer-link-second:hover {
+    transform: scale(1.2);
 }
 .footer-box-text {
     display: flex;
