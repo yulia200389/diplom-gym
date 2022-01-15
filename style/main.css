@@ -687,8 +687,7 @@ width: 204px;
     width: 100%;
     height: 149px;
     background-color: #F3F3F3;
-    position: absolute;
-    left: 0;
+
 }
 .footer-box {
     max-width: 1140px;
@@ -705,7 +704,6 @@ width: 204px;
     gap: 37px;
 }
 .footer-logo {
-    display: block;
     background-image: url(../image/logo.svg);
     width: 97px;
     height: 30px;
@@ -763,8 +761,6 @@ width: 204px;
     height: 27px;
     padding: 0;
     cursor: pointer;
-    transition: .3s;
-    opacity: .8;
 }
 .footer-link-second {
     background-image: url(../image/fb.svg);
@@ -774,8 +770,6 @@ width: 204px;
     height: 27px;
     padding: 0;
     cursor: pointer;
-    transition: .3s;
-    opacity: .8;
 }
 .footer-box-text {
     display: flex;
