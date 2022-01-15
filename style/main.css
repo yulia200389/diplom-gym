@@ -586,6 +586,7 @@ text-transform: uppercase;
 border: none;
 text-align: center;
 padding: 23px 45px ;
+cursor: pointer;
 }
 .agreement {
     position: absolute;
