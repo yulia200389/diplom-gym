@@ -182,6 +182,7 @@ body {
     top: 5px;
     right: -110px;
 }
+
 .banner-arrow img {
     width: 52px;
     height: 55px;
@@ -384,7 +385,8 @@ body {
 .grid-item-body {
     width: 65px;
     height: 65px; 
-    margin-top: 32px;  
+    margin-top: 37px;  
+    margin-bottom: 6px;
 }
 .grid-item:hover .grid-item-body {
     margin-top: 0px;
@@ -412,6 +414,7 @@ body {
     width: 42px;
     height: 85px;
     margin-top: 168px;
+    margin-bottom: 6px;
 }
 .grid-item:hover .grid-item-bootle {
     margin-top: 150px;
@@ -421,6 +424,7 @@ body {
     width: 91px;
     height: 50px;
     margin-top: 108px;
+    margin-bottom: 6px;
 }
 .grid-item:hover .grid-item-dumbell {
     margin-top: 80px;
@@ -452,7 +456,8 @@ body {
 .grid-item-heart {
     width: 65px;
     height: 61px;
-    margin-top: 71px;
+    margin-top: 73px;
+    margin-bottom: 6px;
 }
 .grid-item:hover .grid-item-heart {
     margin-top: 0px;
@@ -461,8 +466,8 @@ body {
 .grid-item-weight {
     width: 58px;
     height: 66px;
-    margin-top: 156px;
-
+    margin-top: 18px;
+    margin-bottom: 6px;
 }
 .grid-item:hover .grid-item-weight {
     margin-top: 120px;
