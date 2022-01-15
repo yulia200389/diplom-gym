@@ -225,9 +225,13 @@ body {
 .maraphon:hover .promo-grid-btn{
     display: block;
 }
-.maraphon-grad:hover {
-    background: linear-gradient(180deg, rgba(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%); 
+.maraphon:hover .promo-grid-type{
+    display: block;
 }
+.maraphon-grad:hover {
+    background: linear-gradient(180deg, rgba(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%);  
+}
+
 .date {
     margin: 0;
     margin-top: 33px;
