@@ -78,8 +78,8 @@ body {
     transition: .3s;
 }
 .header-link-first:hover {
-    
-}transform: scale(1.6);
+    transform: scale(1.6); 
+}
 .header-link-second:hover {
     transform: scale(1.6);
 }
@@ -392,8 +392,11 @@ body {
     margin-top: 0px;
     margin-bottom: 0px;    
 }
-
+.grid-item:hover .description-item {
+    display: block;
+}
 .grid-item:hover .description {
+    display: block;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -417,7 +420,7 @@ body {
     margin-bottom: 6px;
 }
 .grid-item:hover .grid-item-bootle {
-    margin-top: 150px;
+    margin-top: 145px;
     margin-bottom: 2px;
 }
 .grid-item-dumbell {
@@ -427,7 +430,7 @@ body {
     margin-bottom: 6px;
 }
 .grid-item:hover .grid-item-dumbell {
-    margin-top: 80px;
+    margin-top: 75px;
     margin-bottom: 2px;
 }
 .grid-item-jump {
@@ -441,7 +444,7 @@ body {
     box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
 }
 .grid-item:hover .grid-item-jump {
-    margin-top: 80px;
+    margin-top: 90px;
     margin-bottom: 2px;
 }
 .description-item {
