@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fitness</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
@@ -14,10 +14,13 @@
 <body>
     <header id="headerTop">
         <div class="container">
-            <div class="header">
+            <div class="header">               
                 <div class="header-item">
                     <div class="header-logo">
                         <a href="#" class= "head-logo" ></a>
+                    </div>
+                    <div class="header-burger">
+                        <button class="burger" onclick="openModal()"></button>
                     </div>
                     <nav>
                         <ul class="header-nav">
@@ -72,7 +75,7 @@
                 <div class="maraphon-grad">
                     <p class="date">29.06 - 4.07</p>
                     <h3 class="promo-grid-title">Марафон <br> выностивости</h3>
-                    <a href="#" class="promo-grid-btn">Участвовать</a>
+                    <a href="#popupmodal" class="modal-btn promo-grid-btn">Участвовать</a>
                     <p  class="promo-grid-type"href="#">марафон</p>
                     <a href="#" class="follow"><img src="image/vector.svg" alt=""></a>
                 </div>                       
@@ -89,7 +92,7 @@
             <div class="yoga">
                 <div class="maraphon-grad">
                     <p class="date">15.07</p>
-                    <h3 class="promo-grid-title">Йога, как стиль<br> жизни</h3>
+                    <h3 class="promo-grid-title">Йога, как стиль жизни</h3>
                     <a href="#" class="promo-grid-btn">Участвовать</a>
                     <p href="#" class="promo-grid-type">вебинар</p> 
                     <a href="#" class="follow"><img src="image/vector.svg" alt=""></a>
@@ -230,23 +233,38 @@
     </div>
 </div>
 </footer>
-
 <a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a> 
-
 <div id="modal" class="modal">
+    <div class="modal-header">
         <div class="header-logo">
             <a href="#" class= "head-logo" ></a>
         </div>
-        <ul class="header-nav">
-            <li><a href="#">Мероприятия</a></li>
-            <li><a href="#">Расписание</a></li>
-            <li><a href="#">О компании</a></li>
-        </ul>
-        <div class="header-link">
-            <a href="#" class="header-link-first"></a>                     
-            <a href="#" class="header-link-second"></a>
-        </div>
         <button class="burger-close" onclick="closeModal()"></button>
+    </div>
+    <ul class="header-nav">
+        <li><a href="#">Мероприятия</a></li>
+        <li><a href="#">Расписание</a></li>
+        <li><a href="#">О компании</a></li>
+    </ul>
+    <div class="header-link">
+        <a href="#" class="header-link-first"></a>                     
+        <a href="#" class="header-link-second"></a>
+    </div>    
+</div>
+<div class="popup" id="popupmodal">
+      <div class="popup-overlay">
+            <div class="popup-body">
+                <button class="burger-close" onclick="closeModal()"></button>
+                <h2>Заявка на участие
+                «Марафон выносливости»</h2>
+                <p>Заполните все поля, и мы пришлем информацию в ближайшее время</p>
+                <form class="popup-form">
+                    <input type="e-mail" placeholder="Ваш e-mail">"
+                    <input type="tel"n placeholder="Ваш номер телефона">
+                </form>
+                <a href="#">Отправить</a> 
+            </div>
+      </div>
 </div>
 <script>
     //smooth scroll
@@ -301,6 +319,14 @@
        function closeModal() {
            document.getElementById("modal").style.top = "-400px";
        }
+
+        /*popup*/
+       
+            $('a.modal-btn promo-grid-btn').click(function (e) {
+            e.preventDefault();
+            var destinationPopup = $(this).attr("href")
+            $(destinationPopup).addClass('show');
+        });
 
     </script>
 </body>
