@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/normalize.css">
+    <script ENGINE="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js "></script>
+
 </head>
 <body>
     <header id="headerTop">
@@ -75,7 +77,7 @@
                 <div class="maraphon-grad">
                     <p class="date">29.06 - 4.07</p>
                     <h3 class="promo-grid-title">Марафон <br> выностивости</h3>
-                    <a href="#popupmodal" class="modal-btn promo-grid-btn">Участвовать</a>
+                    <a href="#popup" class="modal-btn promo-grid-btn" onclick="openModal()">Участвовать</a>
                     <p  class="promo-grid-type"href="#">марафон</p>
                     <a href="#" class="follow"><img src="image/vector.svg" alt=""></a>
                 </div>                       
@@ -251,7 +253,7 @@
         <a href="#" class="header-link-second"></a>
     </div>    
 </div>
-<div class="popup" id="popupmodal">
+<div class="popup" id="popup">
       <div class="popup-overlay">
             <div class="popup-body">
                 <button class="burger-close" onclick="closeModal()"></button>
@@ -321,12 +323,16 @@
        }
 
         /*popup*/
+
+        function openModal() {
+           document.getElementById("popup").style.top = "0px";
+       }
+
+       function closeModal() {
+           document.getElementById("popup").style.top = "-4000px";
+       }
        
-            $('a.modal-btn promo-grid-btn').click(function (e) {
-            e.preventDefault();
-            var destinationPopup = $(this).attr("href")
-            $(destinationPopup).addClass('show');
-        });
+       
 
     </script>
 </body>
