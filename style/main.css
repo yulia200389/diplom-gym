@@ -300,6 +300,7 @@ body {
     background-color: #2B3541;
     color: #FBF138;
 }
+
 .promo-grid-btn a:hover {
     color: #FBF138;
 }
@@ -931,10 +932,10 @@ width: 204px;
 .popup {
     position: fixed;
     left: 0;
-    top: 0;
+    top: 0; 
     width: 100%;
     height: 100%;
-    display: none;
+   
 }
 .popup-overlay {
     position: absolute;
@@ -953,18 +954,14 @@ width: 204px;
     background: #F3F3F3;
     height: 577px;
     padding: 60px 50px 80px;
+   
 }
 .popup-body .burger-close {
     position: absolute;
     top: 30px;
     right: 30px;
 }
-.popup.show {
-    display: block;
-}
-.show {
-    display: block;
-}
+
 
 
 /*responsive*/
