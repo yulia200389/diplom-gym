@@ -26,7 +26,7 @@
                         <a href="#" class= "head-logo" ></a>
                     </div>
                     <div class="header-burger">
-                        <button class="burger" onclick="openModal()"></button>
+                        <button class="burger" onclick="openMenu()"></button>
                     </div>
                     <nav>
                         <ul class="header-nav">
@@ -244,7 +244,7 @@
         <div class="header-logo">
             <a href="#" class= "head-logo" ></a>
         </div>
-        <button class="burger-close" onclick="closeModal()"></button>
+        <button class="burger-close" onclick="closeMenu()"></button>
     </div>
     <ul class="header-nav">
         <li><a href="#">Мероприятия</a></li>
@@ -317,11 +317,11 @@
 
         // Menu
 
-        function openModal() {
+        function openMenu() {
            document.getElementById("modal").style.top = "0px";
        }
 
-       function closeModal() {
+       function closeMenu() {
            document.getElementById("modal").style.top = "-400px";
        }
 
