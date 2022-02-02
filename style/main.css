@@ -1116,6 +1116,9 @@ width: 204px;
         display: block;
         background-color: #2B3541;
         color: #FBF138;
+        position: absolute;
+        bottom: 0;
+        left: -29px;
     }
     .promo-grid-type p {
         font-size: 14px;
