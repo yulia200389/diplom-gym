@@ -1039,6 +1039,12 @@ width: 204px;
 
 /*responsive*/
 
+@media (min-width: 1400px) {
+    .box-image {
+        right: -39px;
+    }
+}
+
 /* 1200px - 1400px*/
 @media screen and (max-width: 1400px) {
     .container {
@@ -1722,8 +1728,8 @@ width: 204px;
 
 /* 0px - 576px*/
 @media screen and (max-width: 576px) {
-    .container {
-        max-width: 360px;
+        .container {
+            max-width: 360px;
         }
         .head-logo {
             width: 78px;
@@ -1747,7 +1753,7 @@ width: 204px;
         }
         .banner-title {
             font-size: 22px;
-            width: 356px;
+            max-width: 319px;
         }
         .banner-text {
             padding-left: 0px;
@@ -1981,7 +1987,5 @@ width: 204px;
             margin-left: 15px;
             padding: 19px 102px;
         }
-         {
-            display: none;
-        }
+       
     }
