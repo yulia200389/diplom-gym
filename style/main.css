@@ -425,6 +425,7 @@ body {
 }
 .grid-item:hover .description-item {
     display: block;
+    transition: 0.6s;
 }
 .grid-item:hover .description {
     display: block;
@@ -465,6 +466,7 @@ body {
     margin-bottom: 2px;
 }
 .grid-item-jump {
+    
     width: 67px;
     height: 107px;
     margin-top: 90px;
@@ -651,7 +653,6 @@ body {
 }
 .label-agree a:hover { 
     font-size: 11px;
-    line-height: 1.5;
     color: #8F949A;
     -webkit-text-decoration-line: none;
     text-decoration-line: none;
@@ -1052,6 +1053,14 @@ width: 204px;
     .box {
         right: -12px;
     }
+    .grid-item:nth-child(4):hover .grid-item-jump {
+        margin-top: 90px;
+        margin-bottom: 0px;
+    }
+    .grid-item:nth-child(4) .description {
+        display: block;
+        margin-top: 0px;
+        margin-bottom: -2px;
 }
 
 
@@ -1387,8 +1396,14 @@ width: 204px;
         .grid-item-jump {
             margin-top: -10px;
         }
-        .grid-item:hover .grid-item-jump {
-            margin-top: -10px;   
+        .grid-item:nth-child(4):hover .grid-item-jump {
+            margin-top: -10px;
+            margin-bottom: 0px;
+        }
+        .grid-item:nth-child(4) .description {
+            display: block;
+            margin-top: 0px;
+            margin-bottom: -2px;
         }
         .grid-item-heart {
             margin-top: -44px;
@@ -1616,6 +1631,9 @@ width: 204px;
     .yoga:hover .promo-grid-type {
         display: block;
     }
+    .description-item {
+        display: block;
+    }
     .subscription-header {
         max-width: 246px;
     }
@@ -1661,8 +1679,7 @@ width: 204px;
     }
     .about-box-trainers {
         width: 284px;
-    }
-    
+    }    
     .footer-logo {
         width: 101px;
         height: 31px;
@@ -1790,8 +1807,7 @@ width: 204px;
         }
         .trainer {
             grid-area: b;
-        }
-        
+        }        
         .maraphon, .trainer, .yoga {
             width: 200%;
             height: 310px;
@@ -1809,6 +1825,12 @@ width: 204px;
         .maraphon, .trainer {
             width: 100%;
         }
+        .grid-item:hover .grid-item-jump {
+            margin-top: -10px;   
+        }
+        .yoga .maraphon-grad .follow {
+            right: 8px;
+        } 
         .date {
             font-size: 12px;
         }
@@ -1820,17 +1842,13 @@ width: 204px;
             font-size: 12px;
             padding: 6px 1px;
         }
-
         .wrapper-header h2 {
             font-size: 26px;
         }
         .wrapper-header p {
             font-size: 16px;
-        }
-        .description-item {
-            display: none;
-        }
-        .grid-item:hover .description-item {
+        }        
+         .description-item {
             display: none;
         }
         .grid-item:hover {
@@ -1839,6 +1857,10 @@ width: 204px;
         }
         .grid-item:hover .grid-item-body {
             margin-bottom: 7px;
+        }
+        .grid-item:hover .description-item {
+            display: block;
+            transition: 0.6s;
         }
         .subscription-list {
             margin-left: -43px;
@@ -1959,5 +1981,7 @@ width: 204px;
             margin-left: 15px;
             padding: 19px 102px;
         }
-
+         {
+            display: none;
+        }
     }
